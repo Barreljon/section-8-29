@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto'; /*How is robot loading*/
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box; /*By default web browsers calculate the true width of an element by taking the declared width + padding + borders. This changes elements to honour the declared width value */
+}
+
+a {
+    color: $mainOrange;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+    <header>
+        <img src="assets/images/icons/clear-view-escapes.svg">
+        <a href="#" class="btn">Get in touch</a>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav-item">Products</li>
+                <li class="nav-item">Buy</li>
+                <li class="nav-item">Gallery</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="feature">
+        <!-- <img src="https://live.staticflickr.com/65535/49303534693_5e1acd9269_b.jpg" alt=""> -->
+        <picture> <!-- Use picture for different artstyle/cropping -->
+            <source srcset="assets/images/hero--large-i.jpg 1920w, assets/images/hero--large-hi-dpi-i.jpg 3840w, " media="(min-width: 1380px)">
+            <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+            <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+            <img class="feature__image" srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of oceans and mountains"><!-- Always begin with smallest image first (mobile first).  -->
+        </picture>
+
+        <div class="feature__text-content">
+            <div class="wrapper">
+                <h1 class="feature__title">Your clarity</h1>
+                <h2 class="feature__subtitle">One trip away.</h2>
+                <p class="feature__description">We create soul restoring journeys that inspire you to be you.</p>
+                <a href="#" class="btn btn--large btn--orange">Get in touch</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="our-beginning" class="page-section">
+        <div class="wrapper">
+            <h2 class="headline headline--centered headline--light headline--b-margin-small">Mel Gray Photography</h2>
+            <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">What do you get with your <strong>exclusive</strong> use purchase?</h2 class="headline">
+            
+            <div class="wrapper wrapper--medium wrapper--b-margin">
+                <img sizes="(min-width:970px) 976px, 100vw" srcset="assets/images/first-trip-low-res-i.jpg 565w, assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w" alt="Couple walking holding hands">
+            </div>
+
+            <div class="row row--gutters">
+                <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+                    <picture>
+                        <source sizes="404px" srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width:1020px)">
+                        <source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width:800px)">
+                        <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Couple walking holding hands">
+                    </picture>
+                </div>
+                <div class="row__medium-8 row__medium-8--smaller">
+                    <div class="generic-content-container">
+                        <h2 class="headline headline--no-top-margin">Here&rsquo;s how we got started&hellip;</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi quis <a href="#">libero numquam beatae</a> quae! Adipisci, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Ipsum quasi quis libero numquam beatae quae! Adipisci</strong>, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- .wrapper -->
+    </div>
+    
+ 
+    <div class="page-section page-section--blue">
+        <div class="wrapper">
+            <img src="assets/images/icons/star.svg" alt="">
+            <h2>Our features</h2>
+    
+            <img src="assets/images/icons/rain.svg" alt="">
+            <h3>We watch the weather</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi quis libero numquam beatae quae! Adipisci, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+            
+            <img src="assets/images/icons/rain.svg" alt="">
+            <h3>We watch the weather</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi quis libero numquam beatae quae! Adipisci, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+            
+            <img src="assets/images/icons/rain.svg" alt="">
+            <h3>We watch the weather</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi quis libero numquam beatae quae! Adipisci, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+            
+            <img src="assets/images/icons/rain.svg" alt="">
+            <h3>We watch the weather</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi quis libero numquam beatae quae! Adipisci, laborum beatae at vel iure ipsam consequuntur veniam sint quia! Repellat nemo culpa dolorum.</p>
+        </div>
+    </div>
+
+    <article class="page-section">
+        <div class="wrapper">
+            <img srcset="./assets/images/dog-resolution-small.jpg 570w, ./assets/images/dog-resolution-medium.jpg 1200w, ./assets/images/dog-resolution-large.jpg 1920w," alt="Puppy in the sand">
+        </div>
+    </article>
+
+    <footer>
+        <div class="wrapper">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit sapiente labore, neque, et maxime consequuntur officia magnam repellat amet excepturi adipisci vel, explicabo nam nulla est nihil suscipit nisi reiciendis?</p>
+            <a href="#" class="btn btn--orange">Get in touch</a>
+        </div>
+    </footer>
+    
+    <script src="bundled.js"></script>
+</body>
+</html>

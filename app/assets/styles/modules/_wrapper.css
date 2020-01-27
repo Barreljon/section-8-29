@@ -1,0 +1,28 @@
+.wrapper { /*BEM BLOCK*/
+    overflow: hidden;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--medium { /*BEM MODIFIER*/
+        max-width: 800px; /* Make "wrapper-medium" different max-width from standard wrapper*/
+    }
+
+    .wrapper { /* This stops padding of .wrapper being applied again to a nested .wrapper. BEM BLOCKs can go inside of BLOCKs so in HTML we can target <div class="wrapper"><div class="wrapper"></div> */
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+    } 
+
+    @mixin atMedium {
+        &--b-margin {
+            margin-bottom: 3.875rem;
+        } 
+    }
+
+}

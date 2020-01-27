@@ -1,0 +1,12 @@
+.page-section { /*BEM BLOCK class*/
+    padding: 1rem 0;
+
+    &--blue { /*BEM MODIFIER class*/
+        background-color: $mainBlue;
+        color: #fff;
+    }
+
+    @mixin atMedium {
+        padding: 4.5em 0;
+    }
+}

@@ -1,0 +1,43 @@
+/* https://www.udemy.com/course/git-a-web-developer-job-mastering-the-modern-workflow/learn/lecture/5250546#overview */
+/* create a 12 column grid */
+.row {
+    @mixin clearfix; /* style/base/mixins.css */
+
+    &--gutters {
+        margin-right: -65px; /* MODIFIER offsets the padding of the last column, by applying a negative margin to the parent element(row-gutters) and setting overflow: hidden. This hides the padding-right on last column */
+    }
+
+    &--gutters > div { /* MODIFIER class of .row--gutters adds gutters(padding) to all div elements(columns) inside of class row. The Greaterthan ">" selects all direct children that use a tag of "div" hence the columns nested in .row-gutters */
+        padding-right: 65px; /*we don't want the last column in the row to have padding so this is fixed in row--gutters(&--gutters) added above */
+    }
+
+    &__b-margin-until-medium { /* Thought this would be a BEM MODIFIER */
+        margin-bottom: 1rem; /* Counters headline--no-top-margin . Row has b-margin=1rem until atMedium */
+    }
+    
+    @mixin atMedium { /*only when screen is medium or larger do we want these rules to be applied*/
+        
+        &__b-margin-until-medium { /* Thought this would be a BEM MODIFIER */
+            margin-bottom: 0rem; /* Counters headline--no-top-margin. Row has b-margin=0rem until atMedium */
+        }
+
+        &__medium-4 {
+            float: left;
+            width: 33.33%; /* 100% divided by 12 columns multiplied by 4 equals 33.33% */
+        }
+
+        &__medium-4--larger {
+            width: 40%; /* 100% divided by 12 columns multiplied by 4 equals 33.33% */
+        }
+        
+        &__medium-8 {
+            float: left;
+            width: 66.66%; /* 100% divided by 12 columns multiplied by 4 equals 33.33% */
+        }
+
+        &__medium-8--smaller {
+            width: 60%; /* 100% divided by 12 columns multiplied by 4 equals 33.33% */
+        }
+    }
+    
+}

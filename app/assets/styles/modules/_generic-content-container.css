@@ -1,0 +1,17 @@
+.generic-content-container { /* Goes against the BEM philosphy with decendent selectors. But the scope is limited to this class(.generic-content-container). Good for generated content(WordPress) where we can't control all the classes added to each bit of content - Exeption to BEM rule */
+    
+    p { /* type selector */
+        line-height: 1.65;
+        font-size: 1rem; /* Doesn't need a font-size cause it will default to 1rem */
+        margin-bottom: 1.8rem 0;
+
+        @mixin atSmall {
+            font-size: 1.125rem;
+        }
+    }
+
+    p a { /* descendant slector */
+        font-weight: 500; /*font-weaight: 400 is considered standard */
+    }
+    
+}

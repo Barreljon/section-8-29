@@ -1,0 +1,50 @@
+.headline { /*BEM BLOCK*/
+    font-weight: 300; 
+    font-size: 1.9rem; /*Mobile first design - start with smallest size*/
+    color: $mainBlue;
+
+    @mixin atSmall {
+        font-size: 2.875rem;
+    }
+
+    &--centered { /*BEM --MODIFIER*/
+        text-align: center;
+    }
+
+    &--orange { /*change headline's colour to something other than colour of standard headlone */
+        color: $mainOrange;
+    }
+
+    &--small { /*Make headline small than standard headline*/
+        font-size:1.2rem;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+
+    &--narrow { /*Make headline wrap earlier than rest of the content and center in element*/
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--light { /*Make headline a lighter weight than standard headline weight*/
+        font-weight: 100;
+    }
+
+    &--b-margin-small { /*Great way to create margins between headline and content below*/
+        margin-bottom: .5em; /*use em cause it means the margin will always scale very nicely with fontsize*/
+    }
+
+    &--b-margin-large { /*Great way to create margins between headline and content below*/
+        margin-bottom: 1.6em; /*use em cause it means the margin will always scale very nicely with fontsize*/
+    }
+
+    &--no-top-margin { /* to add margin on default/mobile-first only we  we added a class to the .row class called .row__b-margin-until-medium*/
+        margin-top: 0;
+    }
+
+
+
+}
